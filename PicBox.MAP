@@ -1,0 +1,8 @@
+"Yes","SP ","ENC","Yes"
+"No","S  ","EN ","No"
+"/separator/","S  ","EN ","No"
+"Yes To All","S  ","EN ","No"
+"No To All","S  ","EN ","No"
+"GS","","",""
+"TPM_RIGHTALIGN = &H8&","","",""
+"TPM_LEFTBUTTON = &H0","","",""

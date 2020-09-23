@@ -1,0 +1,70 @@
+Esential info that enabled me to build this found at:
+http://www.vbapi.com
+© Paul Kuliniewicz. 
+------------------------------------------------------
+To make smart comments first study stuff there, if
+not already.
+
+ver1. No pictures
+ver2. Eureka - Pictures  + a lot of other stuff
+
+VERSION INFO
+---------------------------------------
+---------------------------------------
+---------------------------------------
+ver 1.0
+'initial version
+---------------------------------------
+---------------------------------------
+---------------------------------------
+ver 2.0
+
+1. No more ugly left, right, up, down item navigation - all
+transfered to nice proffesional looking popup menu.
+
+1.1 Each listbox now have it's own popup menu, which results
+in absence of version 1 properties window.
+
+2.Complete PATH FINDER added - as a result you have nice comments
+beside subs that execute thinghs = you can see in code which 
+item click will trigger events under that sub.
+examples:
+Case 1001 '(Insert/Item)
+Case 1000 '(Insert/Separator)
+etc
+'Case 1000 is meaningles, but stuff in brackets is what you understand
+---------------------------------------------
+3.BITMAPS in menus added.
+Note: pictures must be .bmp, not .ico !
+They must be 12 * 12 pixels ! They can be there 
+as just bmp or as replacement for checkmarks
+Inserting 16*16 pixels pics to VB created menu is good but they doesn't fit 
+here.
+Check How big can be on your system with this:
+
+Public Declare Function GetMenuCheckMarkDimensions Lib "user32" () As Long
+Private Sub Test_Click()
+    Dim Buffer As Long
+    Buffer = GetMenuCheckMarkDimensions
+    Buffer = Buffer And &HFF
+    ApiBmpDimensions = Buffer
+    'ApiBmpDimensions returns 13 pixels on my PC, so bmp must be 12 * 12 pixels 
+end sub
+---------------------------------------------
+4. Substantial SHRINKING & better organising of OUTPUT code. 
+There are no more sub's for each item separately. They are all packed under 
+one sub(outputed code), look there everything is quite clear.
+Hmm why is that good ? If you choose to have more diferent API popupmenus
+(as is the case in THIS APP), in your form: one under command_click, 
+another under text1_change etc then all this mass of subs would become 
+confusing and crappy.
+---------------------------------------------
+5.Automatic CHECKED/UNCHECKED handling added !
+This produce code that is automaticaly added to the sub's
+that you otherwise put code manualy.
+---------------------------------------
+---------------------------------------
+---------------------------------------
+Comments are welcome.
+
+e-mail: kozlicki@yahoo.com
